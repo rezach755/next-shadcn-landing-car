@@ -8,8 +8,8 @@ import { HeroHeader, ContentSection } from "@/types/contents"
  ==================== */
 
 export const heroHeader: HeroHeader = {
-  header: `Landing pages made easy`,
-  subheader: `Easy to setup. Customizable. Quick. Responsive.`,
+  header: `خدمات شبانه روزی امداد خودرو و مکانیک سیار`,
+  subheader: `خدمات رسانی به هموطنان عزیز در سراسر فارس بلاخص شهرستان سروستان و شیراز`,
   image: `/hero-img.webp`,
 }
 

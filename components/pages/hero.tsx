@@ -25,9 +25,10 @@ export default function HeroHeader() {
         </Link>
       </div>
       {heroHeader.image !== "" ? (
-        <div className="flex flex-1 justify-center lg:justify-end">
+        <div className="flex flex-1 justify-center rounded-xl lg:justify-end">
           <Image
-            src={heroHeader.image}
+          className="rounded-full"
+            src="/car.jpg"
             width={500}
             height={500}
             alt="Header image"
