@@ -2,6 +2,8 @@ import { IconKeys } from "@/components/icons"
 
 export type HeroHeader = {
   header: string
+  headertag: string
+  tell: string
   subheader: string
   image: string
 }
