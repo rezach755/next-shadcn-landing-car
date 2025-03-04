@@ -16,8 +16,12 @@ module.exports = {
       },
     },
     extend: {
+      // fontFamily: {
+      //   sans: ["var(--font-yekan)"],
+      // },
       fontFamily: {
-        sans: ["var(--font-yekan)"],
+        Anjoman: "var(--bodyFont)",
+        AnjomanBold: "var(--AnjomanBold)",
       },
       colors: {
         "main-orange": "var(--main-orange)",
