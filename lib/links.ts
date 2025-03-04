@@ -8,7 +8,7 @@ export const navLinks = [
     path: "/#features",
   },
   {
-    route: "Contact",
+    route: "تماس با ما",
     path: "/contact",
   },
   {
