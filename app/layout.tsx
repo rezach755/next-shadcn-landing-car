@@ -5,6 +5,8 @@ import Navbar from "@/components/layout/navbar"
 import Footer from "@/components/layout/footer"
 import { ThemeProvider } from "@/components/theme-provider"
 import { settings } from "@/config/settings"
+import localFont from "next/font/local";
+
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -50,6 +52,19 @@ export const metadata = {
     icon: "/favicon.ico",
   },
 }
+const yekan = localFont({
+  src: [
+    {
+      path: "../fonts/BYekan.ttf",
+      weight: "400",
+    },
+    {
+      path: "../fonts/BYekanBold.ttf",
+      weight: "700",
+    },
+  ],
+  variable: "--font-yekan",
+});
 
 export const viewport = {
   themeColor: [
@@ -64,9 +79,9 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html dir="rtl" lang="fa" suppressHydrationWarning>
+    <html dir="rtl" lang="fa" className={`${yekan.variable} !scroll-smooth `} suppressHydrationWarning>
       <body
-        className={`${inter.className} flex min-h-screen flex-col bg-background text-primary`}
+        className={`${inter.className} flex min-h-screen flex-col bg-background text-primary ${yekan.variable}`}
       >
         {settings.themeToggleEnabled ? (
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
