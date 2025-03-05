@@ -2,7 +2,7 @@ import { IconKeys } from "@/components/icons"
 
 export type HeroHeader = {
   header: string
-  headertag: string
+  // headertag: string
   tell: string
   subheader: string
   image: string
@@ -11,7 +11,8 @@ export type HeroHeader = {
 export type Content = {
   text: string
   subtext: string
-  icon?: IconKeys
+  image: string;
+  icon?: string;
 }
 
 export type ContentSection = {

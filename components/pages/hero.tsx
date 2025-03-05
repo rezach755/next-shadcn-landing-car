@@ -11,7 +11,7 @@ export default function HeroHeader() {
         <div className="flex flex-1 flex-col items-center gap-4 text-center lg:gap-8">
           <div className="space-y-4 bg-slate-50 dark:bg-slate-900 rounded-lg p-3 w-full">
             <h1 className="text-2xl font-semibold lg:text-4xl">{heroHeader.header}</h1>
-            <h1 className="text-xs font-bold lg:text-sm">{heroHeader.headertag}</h1>
+            {/* <h1 className="text-xs font-bold lg:text-sm">{heroHeader.headertag}</h1> */}
             
             <div className="flex flex-col sm:flex-row justify-center items-center gap-5">
 
@@ -38,7 +38,7 @@ export default function HeroHeader() {
         
         {heroHeader.image && (
           <div className="flex flex-1 justify-center lg:justify-end">
-            <Image className="w-full" src="/car.jpg" width={500} height={400} alt="Header image" />
+            <Image className="w-full" src="/car1.jpg" width={500} height={400} alt="Header image" />
           </div>
         )}
       </section>
