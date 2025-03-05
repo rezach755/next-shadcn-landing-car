@@ -5,7 +5,7 @@ import { Card, CardDescription, CardTitle } from "@/components/ui/card";
 
 export default function FeatureCards() {
   return (
-    <section className="bg-slate-50 dark:bg-slate-900">
+    <section className="bg-slate-50 dark:bg-slate-900 " id="featurescard">
       <div className="container space-y-8 py-12 text-center lg:py-20">
         {featureCards.header || featureCards.subheader ? (
           <HeadingText subtext={featureCards.subheader}>
@@ -27,7 +27,7 @@ export default function FeatureCards() {
                   className="h-full w-full"
                 />
               </div>
-              <div className="space-y-2">
+              <div className="text-center space-y-2">
                 <CardTitle>{cards.text}</CardTitle>
                 <CardDescription>{cards.subtext}</CardDescription>
               </div>

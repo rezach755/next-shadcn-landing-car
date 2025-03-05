@@ -70,9 +70,9 @@ const icons = {
   },
 
   // Features
-  fileSearch: AiOutlineFileSearch,
-  barChart: BiBarChartAlt,
-  settings: LuSettings,
+  // fileSearch: AiOutlineFileSearch,
+  // barChart: BiBarChartAlt,
+  // settings: LuSettings,
 
   // Mode Toggle
   moon: BsMoonStars,

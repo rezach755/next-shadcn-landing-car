@@ -1,18 +1,22 @@
 export const navLinks = [
   {
-    route: "Home",
+    route: "خانه",
     path: "/",
   },
   {
-    route: "Features",
+    route: "انواع حمل خودرو",
+    path: "/#featurescard",
+  },
+  {
+    route: "انواع خدمات",
     path: "/#features",
   },
   {
     route: "تماس با ما",
-    path: "/contact",
+    path: "#footer",
   },
-  {
-    route: "Github",
-    path: "https://github.com/redpangilinan/next-shadcn-landing",
-  },
+  // {
+  //   route: "Github",
+  //   path: "https://github.com/redpangilinan/next-shadcn-landing",
+  // },
 ]

@@ -5,8 +5,7 @@ import Navbar from "@/components/layout/navbar"
 import Footer from "@/components/layout/footer"
 import { ThemeProvider } from "@/components/theme-provider"
 import { settings } from "@/config/settings"
-import localFont from "next/font/local";
-
+import localFont from "next/font/local"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -49,7 +48,9 @@ export const metadata = {
     creator: "@_rdev7",
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: "/car1.jpg",
+    shortcut: "/my-custom-icon-16x16.png",
+    apple: "/apple-touch-icon.png",
   },
 }
 const yekan = localFont({
@@ -64,7 +65,7 @@ const yekan = localFont({
     },
   ],
   variable: "--font-yekan",
-});
+})
 
 export const viewport = {
   themeColor: [
@@ -79,7 +80,12 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html dir="rtl" lang="fa" className={`${yekan.variable} !scroll-smooth `} suppressHydrationWarning>
+    <html
+      dir="rtl"
+      lang="fa"
+      className={`${yekan.variable} !scroll-smooth `}
+      suppressHydrationWarning
+    >
       <body
         className={`${inter.className} flex min-h-screen flex-col bg-background text-primary ${yekan.variable}`}
       >

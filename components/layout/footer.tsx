@@ -1,14 +1,15 @@
 import Link from "next/link"
 import { siteConfig } from "@/config/site"
 import { navLinks } from "@/lib/links"
+import { heroHeader } from "@/config/contents"
 
 export default function Footer() {
   return (
-    <footer className="mt-auto">
+    <footer className="mt-auto" id="footer">
       <div className="mx-auto w-full max-w-screen-xl p-6 md:py-8">
         <div className="sm:flex sm:items-center sm:justify-between">
           <Link href="/">
-            <h1 className="mb-2 text-2xl font-bold sm:mb-0">
+            <h1 className="mb-2 text-base font-semibold sm:mb-0 sm:text-2xl">
               {siteConfig.name}
             </h1>
           </Link>
@@ -23,17 +24,22 @@ export default function Footer() {
           </ul>
         </div>
         <hr className="my-6 text-muted-foreground sm:mx-auto lg:my-8" />
-        <span className="block text-sm text-muted-foreground sm:text-center">
-          © {new Date().getFullYear()}{" "}
-          <a
-            target="_blank"
-            href="https://redpangilinan.live/"
-            className="hover:underline"
-          >
-            Red Pangilinan
-          </a>
-          . All Rights Reserved.
-        </span>
+        <div className="flex justify-center items-center">
+          <span className="flex flex-wrap text-sm font-semibold items-center text-muted-foreground sm:text-center sm:text-2xl">
+            {heroHeader.tell.split("،").map((phone, index) => (
+              <a
+                key={index}
+                href={`tel:${phone.trim()}`}
+                className="rounded-lg px-4 py-1 text-blue-600 hover:underline"
+              >
+                {phone.trim()}
+              </a>
+            ))}
+          </span>
+          <span className="text-sm font-semibold sm:text-2xl">
+            امداد خودرو سروستان جوکار
+          </span>
+        </div>
       </div>
     </footer>
   )

@@ -28,7 +28,7 @@ export default function Navbar() {
         <div>
           <div className="flex items-center justify-between py-3 md:block md:py-5">
             <Link href="/" onClick={handleClick}>
-              <h1 className="text-xs sm:text-lg font-bold duration-200 lg:hover:scale-[1.10]">
+              <h1 className="text-xs sm:text-lg font-bold duration-200 lg:hover:scale-[1.10] ">
                 {siteConfig.name}
               </h1>
             </Link>
@@ -79,11 +79,11 @@ export default function Navbar() {
             }`}
             style={{ width: "100%", maxWidth: "20rem" }}
           >
-            <ul className="flex flex-col items-center space-y-4 text-primary opacity-60 md:flex-row md:space-x-6 md:space-y-0">
+            <ul className="flex flex-col items-center space-y-4 text-primary opacity-60 md:flex-row md:space-x-6 md:space-y-0 whitespace-nowrap">
               {navLinks.map((link) => (
                 <li key={link.route}>
                   <Link
-                    className="hover:underline"
+                    className="hover:underline p-4"
                     href={link.path}
                     onClick={handleClick}
                   >
