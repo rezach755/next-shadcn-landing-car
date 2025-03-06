@@ -28,7 +28,7 @@ export default function Navbar() {
         <div>
           <div className="flex items-center justify-between py-3 md:block md:py-5">
             <Link href="/" onClick={handleClick}>
-              <h1 className="text-xs sm:text-lg font-bold duration-200 lg:hover:scale-[1.10] ">
+              <h1 className="text-base sm:text-lg font-bold duration-200 lg:hover:scale-[1.10] ">
                 {siteConfig.name}
               </h1>
             </Link>
