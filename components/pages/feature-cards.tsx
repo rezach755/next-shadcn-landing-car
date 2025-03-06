@@ -1,7 +1,7 @@
-import Image from "next/image";
-import HeadingText from "@/components/heading-text";
-import { featureCards } from "@/config/contents";
-import { Card, CardDescription, CardTitle } from "@/components/ui/card";
+import Image from "next/image"
+import HeadingText from "@/components/heading-text"
+import { featureCards } from "@/config/contents"
+import { Card, CardDescription, CardTitle } from "@/components/ui/card"
 
 export default function FeatureCards() {
   return (
@@ -19,15 +19,16 @@ export default function FeatureCards() {
               className="flex flex-grow flex-col items-center justify-between gap-4 p-8 dark:bg-secondary"
             >
               <div className="flex">
-                <Image
-                  src={cards.image}
-                  alt={cards.text}
-                  width={150}
-                  height={150}
-                  className="h-full w-full"
-                />
+                {cards.image && (
+                  <Image
+                    src={cards.image}
+                    alt={cards.text}
+                    width={150}
+                    height={150}
+                  />
+                )}
               </div>
-              <div className="text-center space-y-2">
+              <div className="space-y-2 text-center">
                 <CardTitle>{cards.text}</CardTitle>
                 <CardDescription>{cards.subtext}</CardDescription>
               </div>
@@ -36,5 +37,5 @@ export default function FeatureCards() {
         </div>
       </div>
     </section>
-  );
+  )
 }
