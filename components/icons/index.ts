@@ -1,11 +1,13 @@
 // components/icons.ts
+import { IconType } from "react-icons";
 import { MdCarRepair } from "react-icons/md";
-import { FiBarChart2 } from "react-icons/fi";
+import { FaGasPump } from "react-icons/fa";
 import { GiCargoCrane } from "react-icons/gi";
 
-export const Icons = {
-  // Use <MdCarRepair /> for the fileSearch key
+export type IconKeys = "fileSearch" | "barChart" | "settings";
+
+export const Icons: Record<IconKeys, IconType> = {
   fileSearch: MdCarRepair,
-  barChart: FiBarChart2,
+  barChart: FaGasPump,
   settings: GiCargoCrane,
 };

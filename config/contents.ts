@@ -40,7 +40,7 @@ export const featureCards: ContentSection = {
 
 export const features: ContentSection = {
   header: `انواع خدمات`,
-  subheader: `ما چه خدماتی به شما ارائه خواهیم داد؟`,
+  subheader: `ما  به شما چه خدماتی ارائه خواهیم داد؟`,
   image: `/features-img.webp`,
   content: [
     {

@@ -13,10 +13,10 @@ export default function Footer() {
               {siteConfig.name}
             </h1>
           </Link>
-          <ul className="mb-6 flex flex-wrap items-center text-primary opacity-60 sm:mb-0">
+          <ul className="mb-6 flex flex-col items-center text-primary opacity-60 sm:mb-0 sm:flex-row">
             {navLinks.map((link) => (
-              <li key={link.route}>
-                <Link href={link.path} className="mr-4 hover:underline md:mr-6">
+              <li key={link.route} className="mb-2 sm:mb-0">
+                <Link href={link.path} className="mr-0 hover:underline sm:mr-6">
                   {link.route}
                 </Link>
               </li>
@@ -24,8 +24,8 @@ export default function Footer() {
           </ul>
         </div>
         <hr className="my-6 text-muted-foreground sm:mx-auto lg:my-8" />
-        <div className="flex justify-center items-center">
-          <span className="flex flex-wrap text-sm font-semibold items-center text-muted-foreground sm:text-center sm:text-2xl">
+        <div className="flex items-center justify-center">
+          <span className="flex flex-wrap items-center text-sm font-semibold text-muted-foreground sm:text-center sm:text-2xl">
             {heroHeader.tell.split("،").map((phone, index) => (
               <a
                 key={index}

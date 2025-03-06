@@ -1,8 +1,7 @@
 import Image from "next/image"
 import HeadingText from "@/components/heading-text"
 import { features } from "@/config/contents"
-// import { Icons } from "@/components/icons"
-import { Icons } from "@/components/icons/index";
+import { Icons } from "@/components/icons/index"
 
 export default function Features() {
   return (
@@ -18,7 +17,11 @@ export default function Features() {
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
         <div className="grid grid-cols-1 gap-8">
           {features.content.map((cards) => {
-            const Icon = Icons[cards.icon || "blank"]
+            // Define the valid keys for Icons mapping.
+            type IconKey = keyof typeof Icons
+            // If cards.icon is not provided or doesn't match, fallback to a default key (e.g., "fileSearch")
+            const iconKey: IconKey = (cards.icon as IconKey) || "fileSearch"
+            const Icon = Icons[iconKey]
             return (
               <div
                 key={cards.text}
@@ -28,10 +31,9 @@ export default function Features() {
                   <Icon className="h-[6rem] w-[6rem]" />
                 </div>
                 <div className="flex-1">
-                  <p className="text-base font-semibold sm:text-2xl md:text4xl ">
+                  <p className="text-base font-semibold sm:text-2xl md:text-4xl">
                     {cards.text}
                   </p>
-                  {/* Split the subtext by newline and render each line as a bullet */}
                   <ul className="list-disc pl-5 font-light text-muted-foreground md:text-lg">
                     {cards.subtext
                       .split("\n")
@@ -44,14 +46,6 @@ export default function Features() {
             )
           })}
         </div>
-        <div
-          className="md:border"
-          style={{
-            backgroundImage: `url(${features.image})`,
-            backgroundRepeat: `no-repeat`,
-            backgroundSize: `cover`,
-          }}
-        ></div>
       </div>
     </section>
   )

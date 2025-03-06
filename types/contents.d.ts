@@ -13,7 +13,7 @@ export type Content = {
   text: string
   subtext: string
   image?: string;
-  icon?: string;
+  icon?: "fileSearch" | "barChart" | "settings" | undefined;
 }
 
 export type ContentSection = {
