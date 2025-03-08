@@ -8,7 +8,7 @@ import { SiteConfig, ContactConfig } from "@/types"
 const baseUrl = "https://nextlanding.rdev.pro"
 
 export const siteConfig: SiteConfig = {
-  name: "امداد خودرو سروستان جوکار",
+  name: "امداد خودرو سروستان سعید",
   author: "redpangilinan",
   description:
     "با خدمات امداد خودرو، مکانیک سیار جوکار و جرثقیل خودرو فارس شیراز سروستان، در هر ساعت از شبانه‌روز به کمک خودروی شما می‌شتابیم. از تعمیرات فوری و حمل خودرو گرفته تا خدمات اضطراری، تیم متخصص ما آماده پاسخگویی به نیازهای شماست.",
