@@ -8,7 +8,7 @@ import { HeroHeader, ContentSection } from "@/types/contents"
  ==================== */
 
 export const heroHeader: HeroHeader = {
-  header: `خدمات شبانه روزی امداد خودرو و مکانیک سیار جوکار`,
+  header: `خدمات شبانه روزی امداد خودرو و مکانیک سیار سعید جوکار`,
   // headertag: `تجربه بیش از ۱۱ سال امداد خودرو حرفه‌ای`,
   tellText: `شماره تماس:`,
   tell: ` 09177483447 ، 09301713447`,
