@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="sm:flex sm:items-center sm:justify-between">
           <Link href="/">
             <h1 className="mb-2 text-base font-semibold sm:mb-0 sm:text-2xl">
-              {siteConfig.name}
+            امداد خودرو سروستان سعید
             </h1>
           </Link>
           <ul className="mb-6 flex flex-col items-center text-primary opacity-60 sm:mb-0 sm:flex-row">

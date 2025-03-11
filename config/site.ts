@@ -5,7 +5,7 @@ import { SiteConfig, ContactConfig } from "@/types"
 -- Fill the details about your website
  ==================== */
 
-const baseUrl = "https://nextlanding.rdev.pro"
+const baseUrl = "https://www.sarvestan-emdad.ir"
 
 export const siteConfig: SiteConfig = {
   name: "09177483447-09301713447/امداد خودرو سروستان سعید",
@@ -47,9 +47,9 @@ export const siteConfig: SiteConfig = {
   ],
   url: {
     base: baseUrl,
-    author: "https://redpangilinan.live",
+    author: "https://www.sarvestan-emdad.ir",
   },
-  ogImage: `${baseUrl}/og.jpg`,
+  ogImage: `${baseUrl}/car1.jpg`,
 }
 
 export const contactConfig: ContactConfig = {
